@@ -61,3 +61,46 @@
 # while(num1  < 41):
 #     print(num1)
 #     num1 += 2
+
+
+side1 = 6
+side2 = 3
+side3 = 3
+
+if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
+    if side1 == side2 == side3:
+        print('equilateral triangle')
+    elif side1 == side2 or side1 == side3 or side2 == side3:
+        print('isosceles triangle')
+    else:
+        print('scalene triangle')
+else:
+    print("can't form a triangle")
+
+
+flag = True
+
+while flag :
+    num = int(input('Enter a number: '))
+    
+    if(num < 0):
+        flag = False
+        
+        
+num = 12345
+reverse = 0
+sum = 0
+count = 0
+while(num > 0):
+    
+    r = num % 10
+    if( r % 3 == 0):
+        print(r)
+    sum = sum + r
+    count += 1
+    reverse = reverse * 10 + r
+    num = num // 10
+
+print(reverse)
+print(sum)
+print(count)
